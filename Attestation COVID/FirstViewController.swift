@@ -28,6 +28,20 @@ class FirstViewController: UIViewController {
          DDN=UserDefaults.standard.object(forKey: "DDN") as? Date ?? Date()
         ConditionAccepted=UserDefaults.standard.bool(forKey: "Accepted")
         // Do any additional setup after loading the view.
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+           let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+           leftSwipe.direction = .left
+           rightSwipe.direction = .right
+           self.view.addGestureRecognizer(leftSwipe)
+           self.view.addGestureRecognizer(rightSwipe)
+    }
+    @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {
+        if sender.direction == .left {
+            self.tabBarController!.selectedIndex = 1
+        }
+        if sender.direction == .right {
+            self.tabBarController!.selectedIndex = 2
+        }
     }
     override func viewDidAppear(_ animated: Bool) {
         
@@ -191,7 +205,7 @@ class FirstViewController: UIViewController {
             (Prenom+" "+Nom).draw(in: CGRect(x: 123, y: MyOrigin-679, width: 400, height: 22), withAttributes: textFontAttributes11)
             DDN.Datestr.draw(in: CGRect(x: 123, y: MyOrigin-654, width: 300, height: 22), withAttributes: textFontAttributes11)
             LieuDN.draw(in: CGRect(x: 92, y: MyOrigin-631, width: 300, height: 22), withAttributes: textFontAttributes11)
-             (Adresse+" "+CP+" "+Ville).draw(in: CGRect(x: 132, y: MyOrigin-606, width: 400, height: 44), withAttributes: textFontAttributes11)
+             (Adresse+" "+CP+" "+Ville).draw(in: CGRect(x: 132, y: MyOrigin-606, width: 400, height: 32), withAttributes: textFontAttributes11)
             Ville.draw(in: CGRect(x: 111, y: MyOrigin-219, width: 300, height: 19), withAttributes: textFontAttributes11)
             Date().Datestr.draw(in: CGRect(x: 92, y: MyOrigin-194, width: 300, height: 19), withAttributes: textFontAttributes11)
             Date().Heurestr.draw(in: CGRect(x: 197, y: MyOrigin-194, width: 300, height: 19), withAttributes: textFontAttributes11)

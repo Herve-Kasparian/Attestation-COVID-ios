@@ -44,9 +44,36 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
         CPTextField.delegate=self
         VilleTextField.delegate=self
         LieuDNTextField.delegate=self
-       
-       
-    }
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+              let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        let scrollup = UISwipeGestureRecognizer(target: self, action: #selector(handleScroll(_:)))
+         let scrolldown = UISwipeGestureRecognizer(target: self, action: #selector(handleScroll(_:)))
+        scrollup.direction = .up
+        scrolldown.direction = .down
+              leftSwipe.direction = .left
+              rightSwipe.direction = .right
+              self.view.addGestureRecognizer(leftSwipe)
+              self.view.addGestureRecognizer(rightSwipe)
+            self.view.addGestureRecognizer(scrollup)
+            self.view.addGestureRecognizer(scrolldown)
+        
+       }
+       @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {
+           if sender.direction == .left {
+               self.tabBarController!.selectedIndex = 0
+           }
+           if sender.direction == .right {
+               self.tabBarController!.selectedIndex = 1
+           }
+       }
+ @objc func handleScroll(_ sender:UISwipeGestureRecognizer) {
+              if sender.direction == .down {
+                 HideKB()
+              }
+              if sender.direction == .up {
+                  HideKB()
+              }
+          }
     override func viewWillDisappear(_ animated: Bool) {
         Prenom=PrenomTextField.text!
         Nom=NomTextField.text!
@@ -70,22 +97,22 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func Nomdidfinish(_ sender: Any) {
-        NomTextField.becomeFirstResponder()
+       // NomTextField.becomeFirstResponder()
     }
     @IBAction func Prenomdidfinish(_ sender: Any) {
-        AdresseTextField.becomeFirstResponder()
+       // AdresseTextField.becomeFirstResponder()
     }
     @IBAction func Adressedidfinish(_ sender: Any) {
-        CPTextField.becomeFirstResponder()
+      //  CPTextField.becomeFirstResponder()
     }
     @IBAction func CPdidfinish(_ sender: Any) {
-        VilleTextField.becomeFirstResponder()
+       // VilleTextField.becomeFirstResponder()
     }
     @IBAction func Villedidfinish(_ sender: Any) {
-        LieuDNTextField.becomeFirstResponder()
+      //  LieuDNTextField.becomeFirstResponder()
     }
     @IBAction func Lieudidfinish(_ sender: Any) {
-        LieuDNTextField.resignFirstResponder()
+       // LieuDNTextField.resignFirstResponder()
     }
     var MytextField:UITextField?
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -110,11 +137,10 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
         textField.backgroundColor = .clear
         return true
     }
-    
 
     @IBAction func DateDidChange(_ sender: Any) {
        print("aa")
-        HideKB()
+         HideKB()
         if DatePicker.date.timeIntervalSinceNow > -100000000 {
             DatePicker.backgroundColor = .orange
         }else{

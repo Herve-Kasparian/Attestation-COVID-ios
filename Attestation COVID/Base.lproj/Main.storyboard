@@ -122,11 +122,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLo-xA-PL9">
-                                <rect key="frame" x="16" y="278" width="128" height="16"/>
+                                <rect key="frame" x="14" y="278" width="132" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="97P-7D-BGX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Famille - garde d'enfants">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -203,7 +203,7 @@
                             <constraint firstItem="WCu-LT-ghV" firstAttribute="top" secondItem="8DR-aF-7qg" secondAttribute="bottom" id="CCS-Jg-rfH"/>
                             <constraint firstItem="HAO-9G-XC1" firstAttribute="top" secondItem="xcA-aM-gRr" secondAttribute="bottom" id="CIu-mK-tto"/>
                             <constraint firstItem="e3b-hC-DiZ" firstAttribute="leading" secondItem="WCu-LT-ghV" secondAttribute="leading" id="EGr-x4-tfy"/>
-                            <constraint firstItem="aLo-xA-PL9" firstAttribute="leading" secondItem="WCu-LT-ghV" secondAttribute="leading" id="Fuh-83-XRe"/>
+                            <constraint firstItem="aLo-xA-PL9" firstAttribute="leading" secondItem="WCu-LT-ghV" secondAttribute="leading" constant="-2" id="Fuh-83-XRe"/>
                             <constraint firstItem="WCu-LT-ghV" firstAttribute="leading" secondItem="8DR-aF-7qg" secondAttribute="leading" id="GGD-ui-cOb"/>
                             <constraint firstItem="jCD-LT-6o6" firstAttribute="leading" secondItem="xcA-aM-gRr" secondAttribute="leading" id="GWB-c5-rgl"/>
                             <constraint firstItem="xcA-aM-gRr" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="40" id="Gfx-4p-H9k"/>
@@ -219,7 +219,7 @@
                             <constraint firstItem="roC-bl-gU3" firstAttribute="leading" secondItem="WCu-LT-ghV" secondAttribute="leading" id="SB7-cZ-r82"/>
                             <constraint firstItem="jCD-LT-6o6" firstAttribute="top" secondItem="KN9-xS-bHx" secondAttribute="bottom" id="SU5-03-0xw"/>
                             <constraint firstItem="Rec-OI-dZE" firstAttribute="leading" secondItem="69q-5K-cVn" secondAttribute="trailing" constant="16" id="SX7-TY-dDd"/>
-                            <constraint firstItem="aLo-xA-PL9" firstAttribute="trailing" secondItem="WCu-LT-ghV" secondAttribute="trailing" id="Sqz-dx-jp3"/>
+                            <constraint firstItem="aLo-xA-PL9" firstAttribute="trailing" secondItem="WCu-LT-ghV" secondAttribute="trailing" constant="2" id="Sqz-dx-jp3"/>
                             <constraint firstItem="GbL-Xe-Jeu" firstAttribute="width" secondItem="GbL-Xe-Jeu" secondAttribute="height" multiplier="2.21" id="TkK-rz-zq0"/>
                             <constraint firstItem="roC-bl-gU3" firstAttribute="top" secondItem="Whf-pl-4St" secondAttribute="bottom" id="U8M-Dc-xh9"/>
                             <constraint firstItem="Whf-pl-4St" firstAttribute="top" secondItem="8DR-aF-7qg" secondAttribute="bottom" constant="32" id="Vnh-yd-CHW"/>
@@ -443,9 +443,10 @@
                                 </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egh-py-VF4">
-                                <rect key="frame" x="2" y="0.0" width="34" height="42"/>
+                                <rect key="frame" x="2" y="0.0" width="42" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="8M5-fi-TLH"/>
+                                    <constraint firstAttribute="width" constant="42" id="Zhh-SY-qlh"/>
                                 </constraints>
                                 <state key="normal" image="NoClav-34"/>
                                 <connections>
