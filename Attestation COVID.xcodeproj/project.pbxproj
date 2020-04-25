@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D830713D2441FA5300286FE4 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830713C2441FA5300286FE4 /* MyTabBarController.swift */; };
 		D830713F244208B300286FE4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830713E244208B300286FE4 /* ThirdViewController.swift */; };
+		D8486D98245493FD007F6C87 /* Attestation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D8486D97245493FD007F6C87 /* Attestation.pdf */; };
 		D854D5592442174200C25CBF /* Travail.png in Resources */ = {isa = PBXBuildFile; fileRef = D854D5582442174200C25CBF /* Travail.png */; };
 		D854D55B2442195C00C25CBF /* Judiciaire.png in Resources */ = {isa = PBXBuildFile; fileRef = D854D55A2442195C00C25CBF /* Judiciaire.png */; };
 		D854D55D24421A2100C25CBF /* Mission.png in Resources */ = {isa = PBXBuildFile; fileRef = D854D55C24421A2100C25CBF /* Mission.png */; };
@@ -19,7 +20,6 @@
 		D87B1B7B2441BB6F002E95CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87B1B792441BB6F002E95CF /* Main.storyboard */; };
 		D87B1B7D2441BB74002E95CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87B1B7C2441BB74002E95CF /* Assets.xcassets */; };
 		D87B1B802441BB74002E95CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87B1B7E2441BB74002E95CF /* LaunchScreen.storyboard */; };
-		D8F70CE72441C26B00DF7A40 /* Attestation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D8F70CE62441C26B00DF7A40 /* Attestation.pdf */; };
 		D8F70CED2441C4FA00DF7A40 /* Santé.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F70CE82441C4FA00DF7A40 /* Santé.png */; };
 		D8F70CEE2441C4FA00DF7A40 /* Sport.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F70CE92441C4FA00DF7A40 /* Sport.png */; };
 		D8F70CEF2441C4FA00DF7A40 /* Famille.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F70CEA2441C4FA00DF7A40 /* Famille.png */; };
@@ -29,6 +29,7 @@
 /* Begin PBXFileReference section */
 		D830713C2441FA5300286FE4 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		D830713E244208B300286FE4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D8486D97245493FD007F6C87 /* Attestation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Attestation.pdf; sourceTree = "<group>"; };
 		D854D5582442174200C25CBF /* Travail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Travail.png; sourceTree = "<group>"; };
 		D854D55A2442195C00C25CBF /* Judiciaire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Judiciaire.png; sourceTree = "<group>"; };
 		D854D55C24421A2100C25CBF /* Mission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mission.png; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		D87B1B7C2441BB74002E95CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D87B1B7F2441BB74002E95CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D87B1B812441BB74002E95CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8F70CE62441C26B00DF7A40 /* Attestation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Attestation.pdf; sourceTree = "<group>"; };
 		D8F70CE82441C4FA00DF7A40 /* Santé.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Santé.png"; sourceTree = "<group>"; };
 		D8F70CE92441C4FA00DF7A40 /* Sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sport.png; sourceTree = "<group>"; };
 		D8F70CEA2441C4FA00DF7A40 /* Famille.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Famille.png; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 		D8F70CF22441C50200DF7A40 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				D8486D97245493FD007F6C87 /* Attestation.pdf */,
 				D8F70CEC2441C4FA00DF7A40 /* Courses.png */,
 				D8F70CEA2441C4FA00DF7A40 /* Famille.png */,
 				D854D55C24421A2100C25CBF /* Mission.png */,
@@ -103,7 +104,6 @@
 				D854D55A2442195C00C25CBF /* Judiciaire.png */,
 				D8F70CE92441C4FA00DF7A40 /* Sport.png */,
 				D854D5582442174200C25CBF /* Travail.png */,
-				D8F70CE62441C26B00DF7A40 /* Attestation.pdf */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -170,11 +170,11 @@
 				D87B1B7D2441BB74002E95CF /* Assets.xcassets in Resources */,
 				D8F70CEE2441C4FA00DF7A40 /* Sport.png in Resources */,
 				D87B1B7B2441BB6F002E95CF /* Main.storyboard in Resources */,
+				D8486D98245493FD007F6C87 /* Attestation.pdf in Resources */,
 				D854D55B2442195C00C25CBF /* Judiciaire.png in Resources */,
 				D8F70CF12441C4FA00DF7A40 /* Courses.png in Resources */,
 				D8F70CED2441C4FA00DF7A40 /* Santé.png in Resources */,
 				D854D5592442174200C25CBF /* Travail.png in Resources */,
-				D8F70CE72441C26B00DF7A40 /* Attestation.pdf in Resources */,
 				D854D55D24421A2100C25CBF /* Mission.png in Resources */,
 				D8F70CEF2441C4FA00DF7A40 /* Famille.png in Resources */,
 			);
@@ -337,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.7;
+				CURRENT_PROJECT_VERSION = 1.0.8;
 				DEVELOPMENT_TEAM = VV4JR8M286;
 				INFOPLIST_FILE = "Attestation COVID/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -357,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.7;
+				CURRENT_PROJECT_VERSION = 1.0.8;
 				DEVELOPMENT_TEAM = VV4JR8M286;
 				INFOPLIST_FILE = "Attestation COVID/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
